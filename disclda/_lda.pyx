@@ -7,7 +7,7 @@ from cython.operator cimport preincrement as inc, predecrement as dec
 from libc.stdlib cimport malloc, free
 
 
-cdef extern from "gamma.h":
+cdef extern from "gamma.c":
     cdef double lda_lgamma(double x) nogil
 
 
